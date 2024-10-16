@@ -1,0 +1,24 @@
+uuid: f1ce7b5c-3c3e-45ff-8789-c14873eca442
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.topic
+  module:
+    - facets
+  theme:
+    - olivero
+id: olivero_topic
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:topic'
+settings:
+  id: 'facet_block:topic'
+  label: Topic
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_topic
+visibility: {  }

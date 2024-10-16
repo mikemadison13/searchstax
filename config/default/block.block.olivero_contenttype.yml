@@ -1,0 +1,24 @@
+uuid: 921c9705-49d6-4dab-a876-87eb966272f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.content_type
+  module:
+    - facets
+  theme:
+    - olivero
+id: olivero_contenttype
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'facet_block:content_type'
+settings:
+  id: 'facet_block:content_type'
+  label: 'Content Type'
+  label_display: visible
+  provider: facets
+  context_mapping: {  }
+  block_id: olivero_contenttype
+visibility: {  }

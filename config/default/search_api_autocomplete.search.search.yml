@@ -1,0 +1,37 @@
+uuid: 07ec605e-2a28-47e1-b19e-97ee3303835f
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.search
+    - views.view.search
+  module:
+    - views
+    - search_api_autocomplete
+    - search_api_solr_autocomplete
+id: search
+label: Search
+index_id: search
+suggester_settings:
+  server:
+    fields: {  }
+  search_api_solr_suggester:
+    search_api_solr/site_hash: 1
+    search_api/index: search
+    drupal/langcode: any
+suggester_weights:
+  server: 0
+  search_api_solr_suggester: 0
+suggester_limits: {  }
+search_settings:
+  'views:search':
+    displays:
+      default: true
+      selected: {  }
+options:
+  limit: 10
+  min_length: 1
+  show_count: true
+  delay: null
+  submit_button_selector: ':submit'
+  autosubmit: true

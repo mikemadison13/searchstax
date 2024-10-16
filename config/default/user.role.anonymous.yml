@@ -1,0 +1,16 @@
+uuid: 759b9f89-948a-4c90-b1f0-653bbe43386e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+    - system
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'view media'
